@@ -1,31 +1,24 @@
 package br.com.guialvesdev.api.gerency.money.model;
 
-
-
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "categoria")
-public class Categoria {
+@Table(name = "pessoa")
+public class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo;
 
     @NotNull
-    @Size(min = 3, max = 20)
     private String nome;
 
+    @Embedded
+    private Endereco endereco;
 
-
-
-
-
-
-
+    @NotNull
+    private Boolean ativo;
 
 
     public Long getCodigo() {
@@ -42,5 +35,21 @@ public class Categoria {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Boolean getAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
     }
 }
