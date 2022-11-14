@@ -3,6 +3,7 @@ package br.com.guialvesdev.api.gerency.money.controller;
 import br.com.guialvesdev.api.gerency.money.event.RecursoCriadoEvent;
 import br.com.guialvesdev.api.gerency.money.model.Pessoa;
 import br.com.guialvesdev.api.gerency.money.repository.PessoaRepository;
+import br.com.guialvesdev.api.gerency.money.service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.HttpStatus;
@@ -20,6 +21,9 @@ public class PessoaController {
 
     @Autowired
     private PessoaRepository pessoaRepository;
+
+    @Autowired
+    private PessoaService pessoaService;
 
     @Autowired
     private ApplicationEventPublisher publisher;
@@ -40,8 +44,17 @@ public class PessoaController {
     }
 
 
+    @DeleteMapping("{codigo}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void remover(@PathVariable Long codigo){
+        pessoaRepository.delete(codigo);
+    }
 
-
+    @PutMapping("/{codigo}")
+    public ResponseEntity<Pessoa> atualizar(@PathVariable Long codigo, @Valid @RequestBody Pessoa pessoa){
+        Pessoa pessoaSalva = pessoaService.atualizar(codigo, pessoa);
+        return ResponseEntity.ok(pessoaSalva);
+    }
 
 
 
