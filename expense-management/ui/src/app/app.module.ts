@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {TabViewModule} from 'primeng/tabview';
 import {InputTextModule} from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { CalendarModule } from 'primeng/calendar';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
 import {TooltipModule} from 'primeng/tooltip';
@@ -24,8 +26,11 @@ import { LaunchRegistrationComponent } from './launch-registration/launch-regist
   imports: [
     BrowserModule,
 
+
     ButtonModule,
+    CalendarModule,
     InputTextModule,
+    InputTextareaModule,
     TableModule,
     TabViewModule,
     TooltipModule
