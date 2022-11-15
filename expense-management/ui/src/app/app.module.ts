@@ -10,16 +10,16 @@ import {TooltipModule} from 'primeng/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchLaunchComponent } from './search-launch/search-launch.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SearchPeopleComponent } from './search-people/search-people.component';
+import { LaunchRegistrationComponent } from './launch-registration/launch-registration.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchLaunchComponent,
     NavbarComponent,
-    SearchPeopleComponent
+    LaunchRegistrationComponent,
   ],
   imports: [
     BrowserModule,
