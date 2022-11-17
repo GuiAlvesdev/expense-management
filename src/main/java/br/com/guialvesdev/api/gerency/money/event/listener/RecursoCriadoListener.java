@@ -2,11 +2,13 @@ package br.com.guialvesdev.api.gerency.money.event.listener;
 
 import br.com.guialvesdev.api.gerency.money.event.RecursoCriadoEvent;
 import org.springframework.context.ApplicationListener;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.servlet.http.HttpServletResponse;
 import java.net.URI;
 
+@Component
 public class RecursoCriadoListener implements ApplicationListener<RecursoCriadoEvent> {
 
 

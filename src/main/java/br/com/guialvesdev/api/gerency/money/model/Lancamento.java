@@ -38,11 +38,14 @@ public class Lancamento {
     @ManyToOne
     @JoinColumn(name = "codigo_categoria")
     private Categoria categoria;
+//    um lancamento tem uma categoria
+//    uma categoria pode estar em varios relacionamentos/lancamentos
 
     @NotNull
     @ManyToOne
     @JoinColumn(name = "codigo_pessoa")
     private Pessoa pessoa;
+    //    uma pessoa pode estar em varios relacionamentos
 
 
     public Long getCodigo() {

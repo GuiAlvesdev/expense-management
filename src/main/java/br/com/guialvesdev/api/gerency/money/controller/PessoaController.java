@@ -1,8 +1,9 @@
 package br.com.guialvesdev.api.gerency.money.controller;
 
 import br.com.guialvesdev.api.gerency.money.event.RecursoCriadoEvent;
+import br.com.guialvesdev.api.gerency.money.model.Lancamento;
 import br.com.guialvesdev.api.gerency.money.model.Pessoa;
-import br.com.guialvesdev.api.gerency.money.repository.PessoaRepository;
+import br.com.guialvesdev.api.gerency.money.event.repository.PessoaRepository;
 import br.com.guialvesdev.api.gerency.money.service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
@@ -37,10 +38,9 @@ public class PessoaController {
 
 
     @GetMapping("/{codigo}")
-    public ResponseEntity<Pessoa> buscarPeloCodigo(@PathVariable Long codigo){
-        Pessoa pessoa = pessoaRepository.findOne(codigo);
-        return pessoa != null ? ResponseEntity.ok(pessoa) : ResponseEntity.notFound().build();
-
+    public ResponseEntity<Lancamento> buscarPeloCodigo(@PathVariable Long codigo) {
+        Optional<Lancamento> lancamento = lancamentoRepository.findById(codigo);
+        return lancamento.isPresent() ? ResponseEntity.ok(lancamento.get()) : ResponseEntity.notFound().build();
     }
 
 

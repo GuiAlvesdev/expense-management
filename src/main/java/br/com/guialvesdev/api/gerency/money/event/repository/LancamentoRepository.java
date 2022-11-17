@@ -1,4 +1,4 @@
-package br.com.guialvesdev.api.gerency.money.repository;
+package br.com.guialvesdev.api.gerency.money.event.repository;
 
 import br.com.guialvesdev.api.gerency.money.model.Lancamento;
 import br.com.guialvesdev.api.gerency.money.model.Pessoa;

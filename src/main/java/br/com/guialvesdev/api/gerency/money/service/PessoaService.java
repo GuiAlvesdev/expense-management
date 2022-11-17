@@ -2,7 +2,7 @@ package br.com.guialvesdev.api.gerency.money.service;
 
 
 import br.com.guialvesdev.api.gerency.money.model.Pessoa;
-import br.com.guialvesdev.api.gerency.money.repository.PessoaRepository;
+import br.com.guialvesdev.api.gerency.money.event.repository.PessoaRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
