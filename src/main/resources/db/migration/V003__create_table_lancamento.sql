@@ -7,6 +7,8 @@ CREATE TABLE lancamento(
     valor DECIMAL(10,2) NOT NULL,
     observacao VARCHAR(100),
     tipo VARCHAR(20) NOT NULL,
+    codigo_categoria BIGINT(20) NOT NULL,
+    codigo_pessoa BIGINT(20) NOT NULL,
     FOREIGN KEY (codigo_categoria) REFERENCES categoria(codigo),
     FOREIGN KEY (codigo_pessoa) REFERENCES pessoa(codigo)
 
