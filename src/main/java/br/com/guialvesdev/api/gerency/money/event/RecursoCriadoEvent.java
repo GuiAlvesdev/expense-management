@@ -5,8 +5,6 @@ import org.springframework.context.ApplicationEvent;
 import javax.servlet.http.HttpServletResponse;
 
 public class RecursoCriadoEvent extends ApplicationEvent {
-
-
     private static final long serialVersionUID = 1L;
 
     private HttpServletResponse response;
@@ -20,10 +18,12 @@ public class RecursoCriadoEvent extends ApplicationEvent {
 
 
     public HttpServletResponse getResponse() {
+
         return response;
     }
 
     public Long getCodigo() {
+
         return codigo;
     }
 

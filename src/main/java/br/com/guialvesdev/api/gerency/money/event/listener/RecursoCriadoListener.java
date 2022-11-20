@@ -13,7 +13,7 @@ public class RecursoCriadoListener implements ApplicationListener<RecursoCriadoE
 
 
     @Override
-    public void onApplicationEvent(RecursoCriadoEvent event) {
+    public void onApplicationEvent(RecursoCriadoEvent recursoCriadoEvent) {
         HttpServletResponse response = RecursoCriadoEvent.getResponse();
         Long codigo = RecursoCriadoEvent.getCodigo();
 

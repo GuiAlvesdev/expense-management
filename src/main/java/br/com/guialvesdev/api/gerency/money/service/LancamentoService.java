@@ -3,8 +3,8 @@ package br.com.guialvesdev.api.gerency.money.service;
 
 import br.com.guialvesdev.api.gerency.money.model.Lancamento;
 import br.com.guialvesdev.api.gerency.money.model.Pessoa;
-import br.com.guialvesdev.api.gerency.money.event.repository.LancamentoRepository;
-import br.com.guialvesdev.api.gerency.money.event.repository.PessoaRepository;
+import br.com.guialvesdev.api.gerency.money.repository.LancamentoRepository;
+import br.com.guialvesdev.api.gerency.money.repository.PessoaRepository;
 import br.com.guialvesdev.api.gerency.money.service.exception.PessoaInexistenteOuInativaException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

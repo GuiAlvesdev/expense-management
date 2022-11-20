@@ -3,7 +3,7 @@ package br.com.guialvesdev.api.gerency.money.controller;
 
 import br.com.guialvesdev.api.gerency.money.event.RecursoCriadoEvent;
 import br.com.guialvesdev.api.gerency.money.model.Lancamento;
-import br.com.guialvesdev.api.gerency.money.event.repository.LancamentoRepository;
+import br.com.guialvesdev.api.gerency.money.repository.LancamentoRepository;
 import br.com.guialvesdev.api.gerency.money.service.LancamentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;

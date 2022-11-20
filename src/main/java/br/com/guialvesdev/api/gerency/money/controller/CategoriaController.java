@@ -2,7 +2,7 @@ package br.com.guialvesdev.api.gerency.money.controller;
 
 
 import br.com.guialvesdev.api.gerency.money.model.Categoria;
-import br.com.guialvesdev.api.gerency.money.event.repository.CategoriaRepository;
+import br.com.guialvesdev.api.gerency.money.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
