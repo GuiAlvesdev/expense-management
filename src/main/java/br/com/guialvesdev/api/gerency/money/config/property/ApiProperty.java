@@ -16,11 +16,11 @@ public class ApiProperty {
         return seguranca;
     }
 
-    public String getOriginPermitida(){
+    public String getOriginPermitida() {
         return originPermitida;
     }
 
-    public void setOriginPermitida(String originPermitida){
+    public void setOriginPermitida(String originPermitida) {
         this.originPermitida = originPermitida;
     }
 
@@ -28,12 +28,14 @@ public class ApiProperty {
 
         private boolean enableHttps;
 
-        public boolean isEnableHttps(){
+        public boolean isEnableHttps() {
             return enableHttps;
         }
 
-        public void setEnableHttps(boolean enableHttps){
+        public void setEnableHttps(boolean enableHttps) {
             this.enableHttps = enableHttps;
         }
+
     }
+
 }
