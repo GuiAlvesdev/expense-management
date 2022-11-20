@@ -9,14 +9,15 @@ import java.util.Objects;
 @Table(name = "usuario")
 public class Usuario {
 
+    @Id
     private Long codigo;
     private String nome;
     private String email;
     private String senha;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "usuario_permissao", joinColumns = @JoinColumn(name = "codigo_usuario")
-    , inverseJoinColumn = @JoinColumn(name = "codigo_permissao"))
+    @JoinTable(name = "usuario_permissao", joinColumns = @JoinColumn(name = "codigo_usuario")
+            , inverseJoinColumns = @JoinColumn(name = "codigo_permissao"))
     private List<Permissao> permissoes;
 
 
