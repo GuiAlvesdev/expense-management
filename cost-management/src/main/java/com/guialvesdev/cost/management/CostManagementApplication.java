@@ -1,13 +1,13 @@
-package com.guialvesdev.money.management;
+package com.guialvesdev.cost.management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MoneyManagementApplication {
+public class CostManagementApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MoneyManagementApplication.class, args);
+		SpringApplication.run(CostManagementApplication.class, args);
 	}
 
 }
