@@ -1,6 +1,7 @@
 package com.guialvesdev.cost.management.controller;
 
 
+import com.guialvesdev.cost.management.event.RecursoCriadoEvent;
 import com.guialvesdev.cost.management.model.Categoria;
 import com.guialvesdev.cost.management.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,8 @@
 package com.guialvesdev.cost.management.token;
 
 
+import com.guialvesdev.cost.management.config.property.AlgamoneyApiProperty;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -21,6 +23,8 @@ import javax.servlet.http.HttpServletResponse;
 @ControllerAdvice
 public class RefreshTokenPostProcessor implements ResponseBodyAdvice<OAuth2AccessToken> {
 
+    @Autowired
+    private AlgamoneyApiProperty algamoneyApiProperty;
 
     @Override
     public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
@@ -28,9 +32,9 @@ public class RefreshTokenPostProcessor implements ResponseBodyAdvice<OAuth2Acces
     }
 
     @Override
-    public OAuth2AccessToken beforeBodyWrite(OAuth2AccessToken body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
-        MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType,
-                ServerHttpRequest request, ServerHttpResponse response) {
+    public OAuth2AccessToken beforeBodyWrite(OAuth2AccessToken body, MethodParameter returnType,
+                                             MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType,
+                                             ServerHttpRequest request, ServerHttpResponse response) {
 
             HttpServletRequest req = ((ServletServerHttpRequest) request).getServletRequest();
             HttpServletResponse resp = ((ServletServerHttpResponse) response).getServletResponse();
