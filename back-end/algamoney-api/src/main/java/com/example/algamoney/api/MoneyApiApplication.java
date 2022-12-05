@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AlgamoneyApiApplication {
+public class MoneyApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AlgamoneyApiApplication.class, args);
+		SpringApplication.run(MoneyApiApplication.class, args);
 	}
 }
