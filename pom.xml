@@ -85,6 +85,7 @@
 			<scope>provided</scope>
 		</dependency>
 
+
 		<!-- Segurança -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

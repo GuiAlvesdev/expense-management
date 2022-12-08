@@ -12,6 +12,8 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+//endpoint pra logout
 @RestController
 @RequestMapping("/tokens")
 public class TokenResource {
