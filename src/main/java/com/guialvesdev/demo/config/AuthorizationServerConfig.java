@@ -1,5 +1,6 @@
 package com.guialvesdev.demo.config;
 
+//servidor de autorizacao
 
 import com.guialvesdev.demo.token.CustomTokenEnhancer;
 import org.springframework.beans.factory.annotation.Autowired;
