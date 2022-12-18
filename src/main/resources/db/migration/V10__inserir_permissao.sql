@@ -1,5 +1,5 @@
-INSERT INTO usuario (codigo, nome, email, senha) values (1, 'Administrador', 'admin@algamoney.com', '$2a$10$hE3QoxJ46byUYqy.77McYOPZLogbuU8sE4LOKY2jWLPaJB/d2Qi76');
-INSERT INTO usuario (codigo, nome, email, senha) values (2, 'Maria Silva', 'maria@algamoney.com', '$2a$10$Zc3w6HyuPOPXamaMhh.PQOXvDnEsadztbfi6/RyZWJDzimE8WQjaq');
+INSERT INTO usuario (codigo, nome, email, senha) values (1, 'Administrador', 'admin@gmail.com', '$2a$10$hE3QoxJ46byUYqy.77McYOPZLogbuU8sE4LOKY2jWLPaJB/d2Qi76');
+INSERT INTO usuario (codigo, nome, email, senha) values (2, 'Guilherme Alves', 'gui@gmail.com', '$2a$10$acMFWKNCbyFvAAXJLoI.neNvdmUTmi.80zrItUAkWJJI3gYmatMeO');
 
 INSERT INTO permissao (codigo, descricao) values (1, 'ROLE_CADASTRAR_CATEGORIA');
 INSERT INTO permissao (codigo, descricao) values (2, 'ROLE_PESQUISAR_CATEGORIA');
