@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AlgamoneyApiProperty {
 
-    private String originPermitida = "https://extraordinary-tapioca-931ec3.netlify.app";
+    private String originPermitida = "*";
 
     private final Seguranca seguranca = new Seguranca();
 
