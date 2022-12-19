@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'mypersonalpiggybank'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A46FB05078B4486DADC6B08009192F1D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_571D726F037B4BB99E4D5C99F78B8DF4 }}
           package: '*.jar'
