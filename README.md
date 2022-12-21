@@ -15,11 +15,16 @@
   
   
 
-https://user-images.githubusercontent.com/72584502/208966151-ee8020ad-615c-4b0a-925d-5b41d0d195c3.mp4
+
 
 
   <h3  align="center">Demonstracao da api<h3>
-  <p>Abaixo voce pode conferir um video de demonstracao de como esta ate o momento a api, funcionando junto com seu front-end em angular 15</p>
+  <p>Abaixo voce pode conferir um video de demonstracao de como esta ate o momento a api, funcionando junto com seu front-end em angular 15 :movie_camera:</p>
+
   
-  <h3> Outras atualizacoes estao por vir ate mais..</h3>
+
+https://user-images.githubusercontent.com/72584502/208966522-12fd0ed1-4aa8-4a4e-a19c-46df6445b8a9.mp4
+
+
+  <h3> Outras atualizacoes estao por vir ate mais..:technologist:</h3>
 
